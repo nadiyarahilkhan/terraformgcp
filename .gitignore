@@ -1,8 +1,9 @@
 # Local .terraform directories
-**/.terraform/*
+*.terraform*  
 
 # .tfstate files
 *.tfstate
+apt-memento-442605-f0-df6dc9fbfdef.json
 *.tfstate.*
 
 # Crash log files
