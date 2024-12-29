@@ -9,17 +9,13 @@ pipeline {
     stages {
         stage('Terraform init') {
             steps {
-                dir(TERRAFORM_DIR) {
-                    sh 'sudo terraform init'
-                }
+                  sh 'sudo terraform init'
+            }    
             }
-        }
         stage('Terraform apply') {
             steps {
-                dir(TERRAFORM_DIR) {
-                    sh 'sudo terraform apply --auto-approve'
-                }
-            }
+                 sh 'sudo terraform apply --auto-approve'
+                   }
         }
     }
 }
